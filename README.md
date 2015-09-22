@@ -2,9 +2,13 @@
 Gstreamer mjpeg proxy
 
 Proxying the mjpeg stream from a raspberry pi 1 connected Microsoft Lifecam. Without transcoding for lowest latency.
+
 Evading the very strict firewall of the EDUROAM network
+
 First /dev/video0 of the rpi is streamed towards an external server
+
 The external server does not mux or perform any other operation that requires negotiation (impossible because of the firewall)
+
 Then the receiving end displays the stream
 
 # raspberry pi (stream to hostip_1)
