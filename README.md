@@ -24,4 +24,4 @@ version 2: gst-launch-1.0 -e -v udpsrc port=5003 ! application/x-rtp, encoding-n
 # receiver (connect to tcp server and read stream)
 version1: gst-launch-1.0 tcpclientsrc port=5010 host=hostip_1 ! multipartdemux ! jpegdec ! autovideosink
 
-version2: gst-launch-1.0 tcpclientsrc port=8554 host=37.97.135.14 ! jpegdec ! autovideosink
+version2: gst-launch-1.0 tcpclientsrc port=8554 host=hostip_1 ! jpegdec ! autovideosink
